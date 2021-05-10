@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<asteroid-prospecting version="1.0" galX="-1" galY="-2">
+    <deposits>
+        <deposit x="15" y="1" type_code="14" deposit_uid="54:11167">
+            <type>Varmigio</type>
+            <size>147180</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="14" y="2" type_code="6" deposit_uid="54:11163">
+            <type>Duracrete</type>
+            <size>151387</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="3" y="6" type_code="17" deposit_uid="54:11162">
+            <type>Durelium</type>
+            <size>94776</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="4" y="7" type_code="2" deposit_uid="54:11176">
+            <type>Meleenium</type>
+            <size>196900</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="19" y="7" type_code="3" deposit_uid="54:11170">
+            <type>Ardanium</type>
+            <size>120450</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="7" y="8" type_code="15" deposit_uid="54:11175">
+            <type>Lommite</type>
+            <size>29810</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="9" y="8" type_code="4" deposit_uid="54:11172">
+            <type>Rudic</type>
+            <size>17292</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="11" y="8" type_code="1" deposit_uid="54:11174">
+            <type>Quantum</type>
+            <size>59416</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="14" y="8" type_code="6" deposit_uid="54:11168">
+            <type>Duracrete</type>
+            <size>106425</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="9" y="11" type_code="14" deposit_uid="54:11157">
+            <type>Varmigio</type>
+            <size>71544</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="3" y="12" type_code="15" deposit_uid="54:11165">
+            <type>Lommite</type>
+            <size>21010</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="10" y="12" type_code="3" deposit_uid="54:11164">
+            <type>Ardanium</type>
+            <size>74745</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="14" y="12" type_code="3" deposit_uid="54:11159">
+            <type>Ardanium</type>
+            <size>80189</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="14" y="13" type_code="15" deposit_uid="54:11171">
+            <type>Lommite</type>
+            <size>151140</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="13" y="14" type_code="3" deposit_uid="54:11160">
+            <type>Ardanium</type>
+            <size>44055</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="0" y="15" type_code="3" deposit_uid="54:11169">
+            <type>Ardanium</type>
+            <size>74497</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="10" y="15" type_code="3" deposit_uid="54:11173">
+            <type>Ardanium</type>
+            <size>51645</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="0" y="16" type_code="6" deposit_uid="54:11158">
+            <type>Duracrete</type>
+            <size>44137</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="7" y="16" type_code="14" deposit_uid="54:11166">
+            <type>Varmigio</type>
+            <size>108108</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="8" y="19" type_code="6" deposit_uid="54:11161">
+            <type>Duracrete</type>
+            <size>194700</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+    </deposits>
+    <scanhistory>
+        <scan x="6" y="3" result="-1" date="Year 22 Day 143, 15:58">No Deposit at 6, 3</scan>
+        <scan x="2" y="2" result="-1" date="Year 22 Day 143, 12:38">No Deposit at 2, 2</scan>
+        <scan x="0" y="5" result="-1" date="Year 22 Day 143, 9:35">No Deposit at 0, 5</scan>
+        <scan x="3" y="6" result="-2" date="Year 22 Day 143, 6:32">Deposit Revealed at 3, 6</scan>
+        <scan x="4" y="7" result="1" date="Year 22 Day 143, 4:04">Trace 1 Square Away from 4, 7</scan>
+        <scan x="4" y="7" result="-2" date="Year 22 Day 143, 4:04">Deposit Revealed at 4, 7</scan>
+        <scan x="2" y="8" result="2" date="Year 22 Day 142, 17:53">Trace 2 Squares Away from 2, 8</scan>
+        <scan x="2" y="8" result="-1" date="Year 22 Day 142, 17:53">No Deposit at 2, 8</scan>
+        <scan x="2" y="7" result="1" date="Year 22 Day 142, 15:23">Trace 1 Square Away from 2, 7</scan>
+        <scan x="2" y="7" result="-1" date="Year 22 Day 142, 15:23">No Deposit at 2, 7</scan>
+        <scan x="3" y="12" result="-2" date="Year 22 Day 142, 11:28">Deposit Revealed at 3, 12</scan>
+        <scan x="3" y="13" result="1" date="Year 22 Day 142, 8:51">Trace 1 Square Away from 3, 13</scan>
+        <scan x="3" y="13" result="-1" date="Year 22 Day 142, 8:51">No Deposit at 3, 13</scan>
+        <scan x="4" y="13" result="1" date="Year 22 Day 142, 6:17">Trace 1 Square Away from 4, 13</scan>
+        <scan x="4" y="13" result="-1" date="Year 22 Day 142, 6:17">No Deposit at 4, 13</scan>
+        <scan x="4" y="11" result="1" date="Year 22 Day 142, 3:33">Trace 1 Square Away from 4, 11</scan>
+        <scan x="4" y="11" result="-1" date="Year 22 Day 142, 3:33">No Deposit at 4, 11</scan>
+        <scan x="4" y="12" result="1" date="Year 22 Day 141, 18:33">Trace 1 Square Away from 4, 12</scan>
+        <scan x="4" y="12" result="-1" date="Year 22 Day 141, 18:33">No Deposit at 4, 12</scan>
+        <scan x="1" y="12" result="2" date="Year 22 Day 141, 15:34">Trace 2 Squares Away from 1, 12</scan>
+        <scan x="1" y="12" result="-1" date="Year 22 Day 141, 15:34">No Deposit at 1, 12</scan>
+        <scan x="2" y="11" result="1" date="Year 22 Day 141, 12:57">Trace 1 Square Away from 2, 11</scan>
+        <scan x="2" y="11" result="-1" date="Year 22 Day 141, 12:57">No Deposit at 2, 11</scan>
+        <scan x="0" y="15" result="-2" date="Year 22 Day 141, 9:29">Deposit Revealed at 0, 15</scan>
+        <scan x="0" y="16" result="1" date="Year 22 Day 141, 7:02">Trace 1 Square Away from 0, 16</scan>
+        <scan x="0" y="16" result="-2" date="Year 22 Day 141, 7:02">Deposit Revealed at 0, 16</scan>
+        <scan x="0" y="19" result="-1" date="Year 22 Day 141, 3:46">No Deposit at 0, 19</scan>
+        <scan x="1" y="16" result="1" date="Year 22 Day 140, 18:00">Trace 1 Square Away from 1, 16</scan>
+        <scan x="1" y="16" result="-1" date="Year 22 Day 140, 18:00">No Deposit at 1, 16</scan>
+        <scan x="4" y="19" result="-1" date="Year 22 Day 140, 14:56">No Deposit at 4, 19</scan>
+        <scan x="7" y="16" result="-2" date="Year 22 Day 140, 11:39">Deposit Revealed at 7, 16</scan>
+        <scan x="6" y="15" result="1" date="Year 22 Day 140, 9:07">Trace 1 Square Away from 6, 15</scan>
+        <scan x="6" y="15" result="-1" date="Year 22 Day 140, 9:07">No Deposit at 6, 15</scan>
+        <scan x="5" y="17" result="2" date="Year 22 Day 140, 6:24">Trace 2 Squares Away from 5, 17</scan>
+        <scan x="5" y="17" result="-1" date="Year 22 Day 140, 6:24">No Deposit at 5, 17</scan>
+        <scan x="7" y="12" result="-1" date="Year 22 Day 140, 2:41">No Deposit at 7, 12</scan>
+        <scan x="5" y="13" result="2" date="Year 22 Day 139, 16:03">Trace 2 Squares Away from 5, 13</scan>
+        <scan x="5" y="13" result="-1" date="Year 22 Day 139, 16:03">No Deposit at 5, 13</scan>
+        <scan x="7" y="8" result="-2" date="Year 22 Day 139, 12:21">Deposit Revealed at 7, 8</scan>
+        <scan x="8" y="6" result="2" date="Year 22 Day 139, 8:30">Trace 2 Squares Away from 8, 6</scan>
+        <scan x="8" y="6" result="-1" date="Year 22 Day 139, 8:30">No Deposit at 8, 6</scan>
+        <scan x="6" y="6" result="2" date="Year 22 Day 139, 5:41">Trace 2 Squares Away from 6, 6</scan>
+        <scan x="6" y="6" result="-1" date="Year 22 Day 139, 5:41">No Deposit at 6, 6</scan>
+        <scan x="11" y="8" result="-2" date="Year 22 Day 139, 1:56">Deposit Revealed at 11, 8</scan>
+        <scan x="9" y="8" result="2" date="Year 22 Day 138, 15:56">Trace 2 Squares Away from 9, 8</scan>
+        <scan x="9" y="8" result="-2" date="Year 22 Day 138, 15:56">Deposit Revealed at 9, 8</scan>
+        <scan x="10" y="12" result="-2" date="Year 22 Day 138, 12:34">Deposit Revealed at 10, 12</scan>
+        <scan x="9" y="11" result="1" date="Year 22 Day 138, 9:33">Trace 1 Square Away from 9, 11</scan>
+        <scan x="9" y="11" result="-2" date="Year 22 Day 138, 9:33">Deposit Revealed at 9, 11</scan>
+        <scan x="10" y="10" result="1" date="Year 22 Day 138, 6:58">Trace 1 Square Away from 10, 10</scan>
+        <scan x="10" y="10" result="-1" date="Year 22 Day 138, 6:58">No Deposit at 10, 10</scan>
+        <scan x="10" y="11" result="1" date="Year 22 Day 138, 4:27">Trace 1 Square Away from 10, 11</scan>
+        <scan x="10" y="11" result="-1" date="Year 22 Day 138, 4:27">No Deposit at 10, 11</scan>
+        <scan x="9" y="10" result="1" date="Year 22 Day 138, 1:26">Trace 1 Square Away from 9, 10</scan>
+        <scan x="9" y="10" result="-1" date="Year 22 Day 138, 1:26">No Deposit at 9, 10</scan>
+        <scan x="11" y="5" result="-1" date="Year 22 Day 137, 18:07">No Deposit at 11, 5</scan>
+        <scan x="14" y="8" result="-2" date="Year 22 Day 137, 15:07">Deposit Revealed at 14, 8</scan>
+        <scan x="13" y="8" result="1" date="Year 22 Day 137, 12:39">Trace 1 Square Away from 13, 8</scan>
+        <scan x="13" y="8" result="-1" date="Year 22 Day 137, 12:39">No Deposit at 13, 8</scan>
+        <scan x="14" y="12" result="-2" date="Year 22 Day 137, 9:19">Deposit Revealed at 14, 12</scan>
+        <scan x="13" y="14" result="2" date="Year 22 Day 137, 5:30">Trace 2 Squares Away from 13, 14</scan>
+        <scan x="13" y="14" result="-2" date="Year 22 Day 137, 5:30">Deposit Revealed at 13, 14</scan>
+        <scan x="13" y="13" result="1" date="Year 22 Day 137, 2:57">Trace 1 Square Away from 13, 13</scan>
+        <scan x="13" y="13" result="-1" date="Year 22 Day 137, 2:57">No Deposit at 13, 13</scan>
+        <scan x="14" y="13" result="1" date="Year 22 Day 136, 16:50">Trace 1 Square Away from 14, 13</scan>
+        <scan x="14" y="13" result="-2" date="Year 22 Day 136, 16:50">Deposit Revealed at 14, 13</scan>
+        <scan x="13" y="12" result="1" date="Year 22 Day 136, 14:23">Trace 1 Square Away from 13, 12</scan>
+        <scan x="13" y="12" result="-1" date="Year 22 Day 136, 14:23">No Deposit at 13, 12</scan>
+        <scan x="10" y="15" result="-2" date="Year 22 Day 136, 10:51">Deposit Revealed at 10, 15</scan>
+        <scan x="9" y="16" result="1" date="Year 22 Day 136, 8:18">Trace 1 Square Away from 9, 16</scan>
+        <scan x="9" y="16" result="-1" date="Year 22 Day 136, 8:18">No Deposit at 9, 16</scan>
+        <scan x="8" y="14" result="2" date="Year 22 Day 136, 5:33">Trace 2 Squares Away from 8, 14</scan>
+        <scan x="8" y="14" result="-1" date="Year 22 Day 136, 5:33">No Deposit at 8, 14</scan>
+        <scan x="8" y="19" result="-2" date="Year 22 Day 136, 1:56">Deposit Revealed at 8, 19</scan>
+        <scan x="8" y="18" result="1" date="Year 22 Day 135, 18:08">Trace 1 Square Away from 8, 18</scan>
+        <scan x="8" y="18" result="-1" date="Year 22 Day 135, 18:08">No Deposit at 8, 18</scan>
+        <scan x="10" y="19" result="2" date="Year 22 Day 135, 15:25">Trace 2 Squares Away from 10, 19</scan>
+        <scan x="10" y="19" result="-1" date="Year 22 Day 135, 15:25">No Deposit at 10, 19</scan>
+        <scan x="9" y="19" result="1" date="Year 22 Day 135, 12:54">Trace 1 Square Away from 9, 19</scan>
+        <scan x="9" y="19" result="-1" date="Year 22 Day 135, 12:54">No Deposit at 9, 19</scan>
+        <scan x="13" y="17" result="-1" date="Year 22 Day 135, 9:30">No Deposit at 13, 17</scan>
+        <scan x="11" y="17" result="2" date="Year 22 Day 135, 6:43">Trace 2 Squares Away from 11, 17</scan>
+        <scan x="11" y="17" result="-1" date="Year 22 Day 135, 6:43">No Deposit at 11, 17</scan>
+        <scan x="17" y="19" result="-1" date="Year 22 Day 135, 2:53">No Deposit at 17, 19</scan>
+        <scan x="17" y="16" result="-1" date="Year 22 Day 134, 17:04">No Deposit at 17, 16</scan>
+        <scan x="18" y="11" result="-1" date="Year 22 Day 134, 13:32">No Deposit at 18, 11</scan>
+        <scan x="19" y="7" result="-2" date="Year 22 Day 134, 9:43">Deposit Revealed at 19, 7</scan>
+        <scan x="17" y="9" result="2" date="Year 22 Day 134, 6:49">Trace 2 Squares Away from 17, 9</scan>
+        <scan x="17" y="9" result="-1" date="Year 22 Day 134, 6:49">No Deposit at 17, 9</scan>
+        <scan x="17" y="4" result="-1" date="Year 22 Day 134, 2:59">No Deposit at 17, 4</scan>
+        <scan x="15" y="1" result="-2" date="Year 22 Day 133, 15:41">Deposit Revealed at 15, 1</scan>
+        <scan x="15" y="2" result="1" date="Year 22 Day 133, 13:03">Trace 1 Square Away from 15, 2</scan>
+        <scan x="15" y="2" result="-1" date="Year 22 Day 133, 13:03">No Deposit at 15, 2</scan>
+        <scan x="13" y="1" result="2" date="Year 22 Day 133, 10:19">Trace 2 Squares Away from 13, 1</scan>
+        <scan x="13" y="1" result="-1" date="Year 22 Day 133, 10:19">No Deposit at 13, 1</scan>
+        <scan x="14" y="2" result="1" date="Year 22 Day 133, 7:52">Trace 1 Square Away from 14, 2</scan>
+        <scan x="14" y="2" result="-2" date="Year 22 Day 133, 7:52">Deposit Revealed at 14, 2</scan>
+        <scan x="9" y="1" result="-1" date="Year 22 Day 133, 4:06">No Deposit at 9, 1</scan>
+    </scanhistory>
+    <layout>a...a....a...a..aa..
+        ..a...aa.a.aaaaaaa..
+        aaaaa.aaaa...aaaaaa.
+        ..aa..aaaa......aaa.
+        a.aaa.aaaaaa.a..aaaa
+        aaaa.....aaa.a.aa...
+        .aaaaaaaaaaa...aaa..
+        aaaaaaaaaaaaaa.aaa.a
+        ..aaaaaaaaaaaaaaaaa.
+        .aaa.aaaa...aaaaaaaa
+        .aaa.aaaaaaaaa..aaa.
+        aaaaaaaa.aa.aa....aa
+        aaaaaaaa..aaaaa.aaa.
+        aaaaaa.aaaaaaaaaaaa.
+        .....aaaaaaa.aaaaaaa
+        aaa...aaaaaa....aaa.
+        aaa.aaaa.a.a...aaaaa
+        ..a..a....aaaa....a.
+        .aa.a..aa.......a..a
+        aaaaaaa.aaaaaa.a.a.a
+    </layout>
+</asteroid-prospecting>

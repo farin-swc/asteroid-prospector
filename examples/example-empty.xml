@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<asteroid-prospecting version="1.0" galX="-1" galY="-2">
+    <deposits>
+    </deposits>
+    <scanhistory>
+    </scanhistory>
+    <layout>a...a....a...a..aa..
+        ..a...aa.a.aaaaaaa..
+        aaaaa.aaaa...aaaaaa.
+        ..aa..aaaa......aaa.
+        a.aaa.aaaaaa.a..aaaa
+        aaaa.....aaa.a.aa...
+        .aaaaaaaaaaa...aaa..
+        aaaaaaaaaaaaaa.aaa.a
+        ..aaaaaaaaaaaaaaaaa.
+        .aaa.aaaa...aaaaaaaa
+        .aaa.aaaaaaaaa..aaa.
+        aaaaaaaa.aa.aa....aa
+        aaaaaaaa..aaaaa.aaa.
+        aaaaaa.aaaaaaaaaaaa.
+        .....aaaaaaa.aaaaaaa
+        aaa...aaaaaa....aaa.
+        aaa.aaaa.a.a...aaaaa
+        ..a..a....aaaa....a.
+        .aa.a..aa.......a..a
+        aaaaaaa.aaaaaa.a.a.a
+    </layout>
+</asteroid-prospecting>

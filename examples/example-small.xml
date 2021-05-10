@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<asteroid-prospecting version="1.0" galX="-1" galY="-2">
+    <deposits>
+        <deposit x="3" y="6" type_code="17" deposit_uid="54:11162">
+            <type>Durelium</type>
+            <size>94776</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+        <deposit x="4" y="7" type_code="2" deposit_uid="54:11176">
+            <type>Meleenium</type>
+            <size>196900</size>
+            <stability title="Stable" description="Deposit has more than 6 months remaining before it is lost"/>
+        </deposit>
+    </deposits>
+    <scanhistory>
+        <scan x="0" y="5" result="-1" date="Year 22 Day 143, 9:35">No Deposit at 0, 5</scan>
+        <scan x="3" y="6" result="-2" date="Year 22 Day 143, 6:32">Deposit Revealed at 3, 6</scan>
+        <scan x="4" y="7" result="1" date="Year 22 Day 143, 4:04">Trace 1 Square Away from 4, 7</scan>
+        <scan x="4" y="7" result="-2" date="Year 22 Day 143, 4:04">Deposit Revealed at 4, 7</scan>
+        <scan x="2" y="8" result="2" date="Year 22 Day 142, 17:53">Trace 2 Squares Away from 2, 8</scan>
+    </scanhistory>
+    <layout>a...a....a...a..aa..
+        ..a...aa.a.aaaaaaa..
+        aaaaa.aaaa...aaaaaa.
+        ..aa..aaaa......aaa.
+        a.aaa.aaaaaa.a..aaaa
+        aaaa.....aaa.a.aa...
+        .aaaaaaaaaaa...aaa..
+        aaaaaaaaaaaaaa.aaa.a
+        ..aaaaaaaaaaaaaaaaa.
+        .aaa.aaaa...aaaaaaaa
+        .aaa.aaaaaaaaa..aaa.
+        aaaaaaaa.aa.aa....aa
+        aaaaaaaa..aaaaa.aaa.
+        aaaaaa.aaaaaaaaaaaa.
+        .....aaaaaaa.aaaaaaa
+        aaa...aaaaaa....aaa.
+        aaa.aaaa.a.a...aaaaa
+        ..a..a....aaaa....a.
+        .aa.a..aa.......a..a
+        aaaaaaa.aaaaaa.a.a.a
+    </layout>
+</asteroid-prospecting>

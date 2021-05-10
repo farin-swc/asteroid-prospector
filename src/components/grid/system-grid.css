@@ -1,0 +1,19 @@
+.grid-cell {
+    min-width: 30px;
+    height: 30px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.asteroid {
+    background-color: #BA68C8;
+}
+
+.system-grid {
+    border-collapse: unset;
+}
+
+.system-grid td, .system-grid th{
+    font-weight: normal;
+    text-align: center;
+}
