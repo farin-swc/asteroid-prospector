@@ -1,9 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Link} from 'react-router-dom';
+import {getKeys} from '../persistence/keyStorage';
 
 const HomePage = () => {
-  const keysById = JSON.parse(localStorage.getItem('keys')) || {};
+  const keysById = getKeys();
 
   return (
     <div className='container'>

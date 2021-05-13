@@ -7,6 +7,7 @@ import EncryptionForm from '../../components/import/EncryptionForm';
 import {extractDeposits, extractLayout, parseString, transformScansIntoEvents} from './xml';
 import persistenceProvider from '../../persistence/persistenceProvider';
 import cryptoProvider from '../../crypto/cryptoProvider';
+import {storePassphrase} from '../../persistence/keyStorage';
 
 const crypto = cryptoProvider();
 const persistence = persistenceProvider();
@@ -19,10 +20,8 @@ const NewAsteroidField = () => {
 
   const encryptAndPersist = async () => {
     const encrypted = await crypto.encrypt(credentials.passphrase, JSON.stringify(afData))
-    persistence.save(credentials.uuid, encrypted);
-    const keys = JSON.parse(localStorage.getItem('keys')) || {};
-    keys[credentials.uuid] = credentials.passphrase;
-    localStorage.setItem('keys', JSON.stringify(keys));
+    await persistence.save(credentials.uuid, encrypted);
+    storePassphrase(credentials.uuid, credentials.passphrase);
     history.push(`/asteroid-field/${credentials.uuid}`);
   }
 

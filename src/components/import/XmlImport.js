@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 
-const XmlImport = ({doImport}) => {
+const XmlImport = ({doImport, disabled}) => {
   const reader = new FileReader();
   reader.onload = (event) => {
     doImport(event.target.result);
@@ -26,6 +26,7 @@ const XmlImport = ({doImport}) => {
       </div>
       <button
         className='btn btn-outline-primary'
+        disabled={disabled}
       >
         <i className='bi bi-box-arrow-in-down me-1' />
         Load

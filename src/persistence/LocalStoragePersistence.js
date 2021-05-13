@@ -2,12 +2,12 @@ import AbstractPersistence from './AbstractPersistence';
 
 export default class LocalStoragePersistence extends AbstractPersistence {
 
-  save(uid, data) {
-    localStorage.setItem(uid, JSON.stringify(data));
+  async save(uid, data) {
+    return new Promise(() => localStorage.setItem(uid, JSON.stringify(data)));
   }
 
-  get(uid) {
-    return JSON.parse(localStorage.getItem(uid));
+  async get(uid) {
+    return new Promise(() => JSON.parse(localStorage.getItem(uid)));
   }
 
 }
