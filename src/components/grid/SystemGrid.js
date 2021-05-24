@@ -28,9 +28,9 @@ const CellContent = ({cell}) => {
   const content = deposit ?
     <img src={ICONS[deposit.type]} alt={deposit.type}
          title={`${numberFormat.format(deposit.size)} units of ${deposit.type}`} /> :
-    prospected ? <span>P</span> :
-      depositExcluded ? <span>X</span> :
-        possibleTrace ? <span>?</span> : null;
+    prospected ? <span title='Prospected'>P</span> :
+      depositExcluded ? <span title='Deposit excluded'>X</span> :
+        possibleTrace ? <span title='Possible deposit'>{'?'.repeat(possibleTrace.length)}</span> : null;
 
   const classes = deposit ? 'bg-success' :
     prospected ? 'bg-danger' :
@@ -51,32 +51,40 @@ const SystemGrid = ({layout = '', deposits = [], events = []}) => {
   const grid = createGrid(layout, events, deposits);
 
   return (
-    <table className='system-grid'>
-      <thead>
-        <tr>
-          <th />
-          {grid.map((row, idx) => <th>{idx}</th>)}
-          <th />
-        </tr>
-      </thead>
-      <tbody>
-        {grid.map((row, idx) => (
+    <>
+      <table className='system-grid'>
+        <thead>
           <tr>
-            <td>{idx}</td>
-            {row.map(cell => <CellContent cell={cell} />)}
-            <td>{idx}</td>
+            <th />
+            {grid.map((row, idx) => <th>{idx}</th>)}
+            <th />
           </tr>
-        ))}
-      </tbody>
-      <tfoot>
-        <tr>
-          <td />
-          {grid.map((row, idx) => <th>{idx}</th>)}
-          <td />
-        </tr>
-      </tfoot>
-    </table>
-  )
+        </thead>
+        <tbody>
+          {grid.map((row, idx) => (
+            <tr>
+              <td>{idx}</td>
+              {row.map(cell => <CellContent cell={cell} />)}
+              <td>{idx}</td>
+            </tr>
+          ))}
+        </tbody>
+        <tfoot>
+          <tr>
+            <td />
+            {grid.map((row, idx) => <th>{idx}</th>)}
+            <td />
+          </tr>
+        </tfoot>
+      </table>
+      <ul className='list-group list-group-horizontal'>
+        <li className='list-group-item bg-danger'>Prospected, no deposit</li>
+        <li className='list-group-item bg-info'>No possible deposit</li>
+        <li className='list-group-item bg-warning'>Possible deposit</li>
+        <li className='list-group-item bg-success'>Deposit found</li>
+      </ul>
+    </>
+  );
 
 };
 

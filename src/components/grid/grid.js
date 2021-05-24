@@ -48,7 +48,11 @@ const applyEvent = grid => (event) => {
       if (!square.asteroid || square.deposit || square.prospected || square.depositExcluded) {
         return;
       }
-      square.possibleTrace = true;
+      if (square.possibleTrace) {
+        square.possibleTrace = [...square.possibleTrace, event.system];
+      } else {
+        square.possibleTrace = [event.system];
+      }
     });
     if (event.trace === 2) {
       const adjacentSquares = getCoordsByDistance(event.system, 1);

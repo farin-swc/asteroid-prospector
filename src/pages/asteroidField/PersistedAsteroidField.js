@@ -31,6 +31,10 @@ const mergeEvents = (existingEvents, newEvents) => {
   ].sort((a, b) => a.date.localeCompare(b.date))
 }
 
+const notIncludedInExisting = (deposits) => (e) => {
+  return !deposits.find(existing => (e.system.x === existing.x && e.system.y === existing.y));
+}
+
 const PersistedAsteroidField = () => {
   const [afData, setAfData] = useState({});
   const [uiState, setUiState] = useState(AWAITING_AF_DATA);
@@ -58,7 +62,19 @@ const PersistedAsteroidField = () => {
     crypto.decrypt(key, persisted.iv, persisted.encryptedData).then(newData => {
       setPassphrase(key);
       storePassphrase(uid, key);
-      setAfData(JSON.parse(newData));
+
+      const parsed = JSON.parse(newData);
+
+      // make sure that already stored data affected by bug is fixed
+      parsed.deposits = [
+        ...parsed.deposits,
+        ...parsed.events
+          .filter(e => e.deposit)
+          .filter(notIncludedInExisting(parsed.deposits))
+          .map(e => ({...e.system, ...e.deposit}))
+      ];
+
+      setAfData(parsed);
       setUiState(AF_DECRYPTED);
     }).catch((e) => {
       console.error(e);
@@ -82,6 +98,10 @@ const PersistedAsteroidField = () => {
   const readProspectingLog = async (log) => {
     const events = parseProspectingLog(log);
     const newAfData = {...afData};
+    const deposits = events.filter(event => event.deposit)
+      .filter(notIncludedInExisting(newAfData.deposits))
+      .map(event => event.deposit);
+    newAfData.deposits = [...newAfData.deposits, ...deposits];
     newAfData.events = mergeEvents(afData.events, events);
     const encrypted = await crypto.encrypt(passphrase, JSON.stringify(newAfData));
     persistence.save(uid, encrypted);
