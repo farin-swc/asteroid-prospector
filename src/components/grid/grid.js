@@ -91,7 +91,9 @@ const gridFromLayout = (layout) => {
 export const createGrid = (layout, events, deposits) => {
   const grid = applyEvents(gridFromLayout(layout), events);
   deposits.forEach(({size, type, x, y}) => {
-    grid[y][x].deposit = {type, size};
+    if (x >= 0 && y >= 0) {
+      grid[y][x].deposit = {type, size};
+    }
   })
   return grid;
 }

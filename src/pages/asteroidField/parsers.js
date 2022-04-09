@@ -40,7 +40,7 @@ const parseEvent = (dateLine, detailsLine) => {
 
 function parseEventLocation(locationString) {
   const coords = locationString.substring(locationString.indexOf('('))
-    .replaceAll(/( at )|\(|\)|,/g, ' ')
+    .replace(/( at )|\(|\)|,/g, ' ')
     .split(' ').filter(x => x)
   const galaxy = {
     x: Number(coords[0]),
@@ -59,18 +59,18 @@ function parseProspectingResults(sentences) {
     return {trace: 0}
   }
   if (firstTrimmed.startsWith('You found')) {
-    const size = Number(firstTrimmed.replaceAll(/[^0-9]/g, ''))
+    const size = Number(firstTrimmed.replace(/[^0-9]/g, ''))
     const words = firstTrimmed.split(' ');
     const type = words[words.length - 1];
     if (sentences.length > 3) {
-      const trace = Number(sentences[2].replaceAll(/[^0-9]/g, ''))
+      const trace = Number(sentences[2].replace(/[^0-9]/g, ''))
       return {trace, deposit: {size, type}}
     }
     return {trace: 0, deposit: {size, type}}
   }
 
   if (firstTrimmed.startsWith('No deposit was found')) {
-    const trace = Number(sentences[2].replaceAll(/[^0-9]/g, ''))
+    const trace = Number(sentences[2].replace(/[^0-9]/g, ''))
     return {trace}
   }
 
