@@ -4,6 +4,7 @@ import NewAsteroidField from './pages/asteroidField/NewAsteroidField';
 import PersistedAsteroidField from './pages/asteroidField/PersistedAsteroidField';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Sensors from './pages/asteroidField/Sensors';
 
 function App() {
   return (
@@ -17,11 +18,18 @@ function App() {
           <i className='bi bi-plus-circle me-1' />
           New Asteroid Field
         </a>
+        <a className='text-sm-center nav-link' href='/asteroid-field/sensors'>
+          <i className='bi bi-binoculars me-1' />
+          Asteroid Field Sensors
+        </a>
       </nav>
       <BrowserRouter>
         <Switch>
           <Route path='/asteroid-field/new'>
             <NewAsteroidField />
+          </Route>
+          <Route path='/asteroid-field/sensors'>
+            <Sensors />
           </Route>
           <Route path='/asteroid-field/:uid'>
             <PersistedAsteroidField />

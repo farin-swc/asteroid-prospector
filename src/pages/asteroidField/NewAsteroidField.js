@@ -8,6 +8,7 @@ import {extractDeposits, extractLayout, parseString, transformScansIntoEvents} f
 import persistenceProvider from '../../persistence/persistenceProvider';
 import cryptoProvider from '../../crypto/cryptoProvider';
 import {storePassphrase} from '../../persistence/keyStorage';
+import { createGrid } from '../../components/grid/grid';
 
 const crypto = cryptoProvider();
 const persistence = persistenceProvider();
@@ -51,11 +52,13 @@ const NewAsteroidField = () => {
     </div>
   );
 
+  const gridData = createGrid(afData.layout, afData.events, afData.deposits);
+
   return (
     <div className='container-fluid'>
       <div className='row'>
         <div className='col'>
-          <SystemGrid layout={afData.layout} events={afData.events} deposits={afData.deposits} />
+          <SystemGrid gridData={gridData} />
         </div>
         <div className='col'>
           <h3>New Asteroid Field</h3>

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import {Redirect, useParams} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import persistenceProvider from '../../persistence/persistenceProvider';
@@ -10,6 +10,7 @@ import {parseProspectingLog} from './parsers';
 import cryptoProvider from '../../crypto/cryptoProvider';
 import AsteroidFieldControls from '../../components/import/AsteroidFieldControls';
 import {getPassphrase, storePassphrase} from '../../persistence/keyStorage';
+import { createGrid } from '../../components/grid/grid';
 
 
 const AWAITING_AF_DATA = 'awaiting-af-data';
@@ -43,22 +44,7 @@ const PersistedAsteroidField = () => {
 
   const {uid} = useParams();
 
-  useEffect(() => {
-    persistence.get(uid)
-      .catch(() => setUiState(INVALID_AF_UUID))
-      .then(({data: persisted}) => {
-      setFetchedData(persisted);
-      const key = getPassphrase(uid);
-      if (!key) {
-        setUiState(AWAITING_KEY);
-      } else {
-        attemptDecryption(key, persisted);
-      }
-    });
-
-  }, [uid]);
-
-  function attemptDecryption(key, persisted) {
+  const attemptDecryption = useCallback((key, persisted) => {
     crypto.decrypt(key, persisted.iv, persisted.encryptedData).then(newData => {
       setPassphrase(key);
       storePassphrase(uid, key);
@@ -80,7 +66,22 @@ const PersistedAsteroidField = () => {
       console.error(e);
       setUiState(INVALID_KEY)
     });
-  }
+  }, [uid]);
+
+  useEffect(() => {
+    persistence.get(uid)
+      .catch(() => setUiState(INVALID_AF_UUID))
+      .then(({data: persisted}) => {
+      setFetchedData(persisted);
+      const key = getPassphrase(uid);
+      if (!key) {
+        setUiState(AWAITING_KEY);
+      } else {
+        attemptDecryption(key, persisted);
+      }
+    });
+
+  }, [uid, attemptDecryption]);
 
 
   const readXml = async (xmlString) => {
@@ -153,7 +154,7 @@ const PersistedAsteroidField = () => {
     <div className='container-fluid '>
       <div className='row'>
         <div className='col'>
-          <SystemGrid layout={afData.layout} events={afData.events} deposits={afData.deposits} />
+          <SystemGrid gridData={createGrid(afData.layout, afData.events, afData.deposits)}/>
         </div>
         <div className='col me-3'>
           {[AWAITING_KEY, INVALID_KEY].includes(uiState) ? awaitingKey :
